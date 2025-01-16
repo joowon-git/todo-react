@@ -34,6 +34,7 @@ const TodoBox = () => {
       title: title,
     };
 
+    // async
     async function addTodo(newTodo) {
       // 배열에 추가
       await axios.post("http://localhost:1577/api/todos", newTodo);
